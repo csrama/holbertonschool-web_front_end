@@ -1,14 +1,17 @@
-/* Footer address text color */
+/* Footer address */
 .footer-address {
   color: var(--text-color);
 }
 
-/* Social links styling */
+
 .social-link {
-  display: block;
+  display: block; 
 }
 
-/* Social links SVG children */
-.social-link svg {
-  fill: var(--text-color);
+
+.social-link > svg {
+  fill: var(--text-color); 
+  width: 2rem;   
+  height: 2rem;
+  vertical-align: middle; 
 }
