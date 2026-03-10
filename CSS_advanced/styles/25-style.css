@@ -1,0 +1,34 @@
+/* Root variables for buttons */
+:root {
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+}
+
+/* Button class */
+.button {
+  display: var(--button-display);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  font-size: var(--button-font-size);
+  color: var(--button-color);
+  text-decoration: var(--button-text-decoration);
+}
+
+/* Button hover state */
+.button:hover {
+  color: var(--button-hover-color);
+  background-color: var(--button-hover-background);
+  text-decoration: var(--button-hover-text-decoration);
+}
+
+/* Dark theme override */
+[data-section-theme="dark"] {
+  --button-color: var(--color-white);
+}
