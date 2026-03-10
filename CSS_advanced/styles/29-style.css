@@ -1,26 +1,23 @@
 /* 29-style.css */
 
-/* Custom property for nav link hover */
+/* Edit the variable */
 :root {
   --nav-item-link-hover: var(--color-white);
 }
 
-/* Before pseudo-element of nav-link inside nav */
+/* Before pseudo-elements of nav-link inside nav */
 nav .nav-link::before {
-  content: "";                         /* empty */
-  position: absolute;                  /* absolute position */
-  top: 0;                              /* vertical position */
-  left: 0;                             /* horizontal position */
-  background-color: var(--color-white);/* initial background */
-  width: 0;                             /* initial width */
-  height: 20%;                          /* height 20% of parent/root */
+  content: "";                          /* empty content */
+  position: absolute;                   /* absolute positioning */
+  top: 0;                               /* vertical position */
+  left: 0;                              /* horizontal position */
+  background-color: var(--color-white); /* initial background */
+  width: 0;                              /* initial width */
+  height: 20%;                           /* 20% height of parent/root */
 }
 
-/* Hover state: when nav-item is hovered */
+/* Hover state when nav-item is hovered */
 nav .nav-item:hover .nav-link::before {
-  width: 100%;                         /* expand width */
-  background-color: var(--color-primary); /* change bg color */
+  width: 100%;                          /* expand width */
+  background-color: var(--color-primary); /* hover background */
 }
-  background-color: var(--color-primary); /* change background */
-}
-
