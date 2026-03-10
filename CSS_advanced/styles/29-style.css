@@ -1,38 +1,9 @@
-/* Custom properties for header, logo, and nav */
+/* Nav hover variable */
 :root {
-  --header-padding: 4rem 0 0;
-  --header-logo-position: relative;
-  --header-logo-link-display: inline-block;
-  --header-logo-link-position: absolute;
-  --header-logo-link-top: -1rem;
-  --header-logo-link-left: 0;
   --nav-item-link-hover: var(--color-white);
 }
 
-/* Header class */
-.header {
-  padding: var(--header-padding);
-}
-
-/* Header-logo class */
-.header-logo {
-  position: var(--header-logo-position);
-}
-
-/* Link inside header-logo */
-.header-logo a {
-  display: var(--header-logo-link-display);
-  position: var(--header-logo-link-position);
-  top: var(--header-logo-link-top);
-  left: var(--header-logo-link-left);
-}
-
-/* Nav link container */
-.nav .nav-link {
-  position: relative;
-}
-
-/* Before pseudo-elements of nav links */
+/* nav-link before element */
 .nav .nav-link::before {
   content: "";
   position: absolute;
@@ -40,16 +11,11 @@
   left: 0;
   background-color: var(--color-white);
   width: 0;
-  height: 20%;
+  height: 0.2rem;
 }
 
-/* Hover state for nav item before pseudo-element */
+/* hover effect */
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
-}
-
-/* Hover state for nav link text */
-.nav .nav-item:hover .nav-link {
-  color: var(--nav-item-link-hover);
 }
