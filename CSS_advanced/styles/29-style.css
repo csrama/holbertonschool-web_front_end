@@ -1,4 +1,4 @@
-/* Custom properties for header and logo */
+/* Custom properties for header, logo, and nav */
 :root {
   --header-padding: 4rem 0 0;
   --header-logo-position: relative;
@@ -27,7 +27,7 @@
   left: var(--header-logo-link-left);
 }
 
-/* Nav link */
+/* Nav link container */
 .nav .nav-link {
   position: relative;
 }
@@ -47,4 +47,9 @@
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
+}
+
+/* Hover state for nav link text */
+.nav .nav-item:hover .nav-link {
+  color: var(--nav-item-link-hover);
 }
