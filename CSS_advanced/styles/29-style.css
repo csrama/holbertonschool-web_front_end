@@ -5,17 +5,17 @@
 
 /* Before pseudo-elements of nav-link inside nav */
 nav .nav-link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-white);
-  width: 0;
-  height: 20%;
+  content: "";              /* empty content */
+  position: absolute;       /* absolute positioning */
+  top: 0;                   /* vertical position */
+  left: 0;                  /* horizontal position */
+  background-color: var(--color-white); /* background color */
+  width: 0;                 /* initial width */
+  height: 20%;              /* 20% of root element height */
 }
 
-/* Hover state for before pseudo-elements when nav-item is hovered */
+/* Hover state for nav-item containing nav-link */
 nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary);
-  width: 100%;
+  background-color: var(--color-primary); /* change bg color on hover */
+  width: 100%;                            /* expand width on hover */
 }
