@@ -1,6 +1,6 @@
 /* Section Hero */
 .section-hero {
-  background-size: 100% auto; /* 2-value syntax: width height */
+  background-size: cover auto; /* 2-value syntax: cover for width, auto for height */
   width: 90rem;
   height: auto;
 }
