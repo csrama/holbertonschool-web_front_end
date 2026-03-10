@@ -3,19 +3,24 @@
   --nav-item-link-hover: var(--color-white);
 }
 
-/* Before pseudo-elements of nav-link inside nav */
-nav .nav-link::before {
-  content: "";              /* empty content */
-  position: absolute;       /* absolute positioning */
-  top: 0;                   /* vertical position */
-  left: 0;                  /* horizontal position */
-  background-color: var(--color-white); /* background color */
-  width: 0;                 /* initial width */
-  height: 20%;              /* 20% of root element height */
+/* Make sure nav items are relative for absolute positioning */
+nav .nav-item {
+  position: relative;
 }
 
-/* Hover state for nav-item containing nav-link */
+/* Before pseudo-elements of nav-link inside nav */
+nav .nav-link::before {
+  content: "";                        /* empty content */
+  position: absolute;                 /* absolute position */
+  top: 0;                             /* top of parent */
+  left: 0;                            /* left of parent */
+  width: 0;                           /* start width */
+  height: 20%;                        /* height as 20% of parent/root */
+  background-color: var(--color-white); /* initial color */
+}
+
+/* Hover state on parent nav-item */
 nav .nav-item:hover .nav-link::before {
-  background-color: var(--color-primary); /* change bg color on hover */
-  width: 100%;                            /* expand width on hover */
+  width: 100%;                        /* expand width */
+  background-color: var(--color-primary); /* change background */
 }
