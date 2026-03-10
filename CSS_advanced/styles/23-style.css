@@ -1,16 +1,14 @@
-/* styles/23-style.css - Dark theme fixes */
-
-/* Style the footer-address class */
+/* Footer address text color */
 .footer-address {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
-/* Style the social-link class as a block element */
+/* Social links styling */
 .social-link {
-    display: block;
+  display: block;
 }
 
-/* Style social-link that also selects svg children */
+/* Social links SVG children */
 .social-link svg {
-    fill: var(--text-color);
+  fill: var(--text-color);
 }
