@@ -1,0 +1,19 @@
+/* Card title inside card-services */
+.card-services .card-title {
+  margin: 0;
+}
+
+/* Links inside card-services */
+.card-services a {
+  display: block;
+  padding: 2rem; /* 2x root element */
+  background-color: var(--color-light-grey);
+  text-decoration: none;
+}
+
+/* Hover state for links inside card-services */
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
